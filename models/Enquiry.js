@@ -1,5 +1,5 @@
-var mandrill = require('mandrill-api/mandrill');
-var mandrill_client = new mandrill.Mandrill('pyf4snChZI5bxR-6D1bg4g');
+//var mandrill = require('mandrill-api/mandrill');
+//var mandrill_client = new mandrill.Mandrill('pyf4snChZI5bxR-6D1bg4g');
 var keystone = require('keystone'),
 	Types = keystone.Field.Types;
 
