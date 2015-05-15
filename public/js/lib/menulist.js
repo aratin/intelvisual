@@ -24,16 +24,17 @@ var menulink = [
     {path: "/contactlist", button:"contactlist", parent: "contactlist"},
     {path: "/signin", button:"signin", parent: "signin"},
     {path: "/data-warehouse", button:"data-warehouse", parent: "offering"},
-    // {path: "/consultingservice", button:"consultingservice", parent: "offering"},
-    // {path: "/consultingservice", button:"consultingservice", parent: "offering"},
-    // {path: "/consultingservice", button:"consultingservice", parent: "offering"},
-    // {path: "/consultingservice", button:"consultingservice", parent: "offering"},
-    // {path: "/consultingservice", button:"consultingservice", parent: "offering"},
-    // {path: "/consultingservice", button:"consultingservice", parent: "offering"},
-    // {path: "/consultingservice", button:"consultingservice", parent: "offering"},
-    // {path: "/consultingservice", button:"consultingservice", parent: "offering"},
+    {path: "/visualbusinessintelligence", button:"visualbusinessintelligence", parent: "offering"},
+    {path: "/predictive-modeling ", button:"predictive-modeling ", parent: "offering"},
+    {path: "/business-process-strategy", button:"business-process-strategy", parent: "offering"},
+    {path: "/comparative-benchmarking", button:"comparative-benchmarking", parent: "offering"},
+    {path: "/ecommerce-portal", button:"ecommerce-portal", parent: "offering"},
+    {path: "/geo-spatial-analytic", button:"geo-spatial-analytic", parent: "offering"},
+    {path: "/information-reporting-strategy ", button:"information-reporting-strategy ", parent: "offering"},
+    {path: "/social-media-analysis", button:"social-media-analysis", parent: "offering"},
 ]
-
+     
+     
 for(var i = 0; i < menulink.length; i++){
 	$('#' + menulink[i].parent).removeClass('active');
     if(link == menulink[i].path)
