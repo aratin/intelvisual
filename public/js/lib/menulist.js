@@ -22,7 +22,16 @@ var menulink = [
     {path: "/specializedanalyse", button:"specializedanalyse", parent: "offering"},
     {path: "/technologyresale", button:"technologyresale", parent: "offering"},
     {path: "/contactlist", button:"contactlist", parent: "contactlist"},
-    {path: "/signin", button:"signin", parent: "signin"}
+    {path: "/signin", button:"signin", parent: "signin"},
+    {path: "/data-warehouse", button:"data-warehouse", parent: "offering"},
+    // {path: "/consultingservice", button:"consultingservice", parent: "offering"},
+    // {path: "/consultingservice", button:"consultingservice", parent: "offering"},
+    // {path: "/consultingservice", button:"consultingservice", parent: "offering"},
+    // {path: "/consultingservice", button:"consultingservice", parent: "offering"},
+    // {path: "/consultingservice", button:"consultingservice", parent: "offering"},
+    // {path: "/consultingservice", button:"consultingservice", parent: "offering"},
+    // {path: "/consultingservice", button:"consultingservice", parent: "offering"},
+    // {path: "/consultingservice", button:"consultingservice", parent: "offering"},
 ]
 
 for(var i = 0; i < menulink.length; i++){
