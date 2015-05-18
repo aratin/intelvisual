@@ -15,6 +15,7 @@ input.form-control, textarea.form-control {width: 50%;}
 .col-md-4 > img {width: 100%;}
 #offerings .offer-listing ul li ul{padding-left: 15px;}
 #offerings .offer-listing ul li ul li{border-bottom: none;}
+
 /*****************************************************************************************/
 
 /**************************************** Navigation Bar *****************************************/
@@ -68,6 +69,19 @@ input.form-control, textarea.form-control {width: 50%;}
 #content-box .offer-box .black-hover-box .btn-info { background-image: none; background-color: #0093d6; border-radius: 0; border: none; text-transform: uppercase; font-weight: bold; box-shadow: none; -webkit-box-shadow: none;}
 #content-box .new-update-container img{ width: 100%;}
 #content-box .new-container h3{ margin-top: 0}
+#content-box .button.button-xlarge{font-size:1.25em;padding:0.85em 2em;}
+.primaryBtn{background:#f0515b; color: #fff;}
+/*added on 18-5-2015*/
+.not-found-page{
+	margin-top:20px;
+	margin-bottom: 40px;
+}
+.not-found-page ol{
+	-webkit-padding-start:20px;
+}
+.not-found-page ol li{
+	line-height: 30px;
+}
 /*****************************************************************************************/
 
 /**************************************** Footer Box *****************************************/
