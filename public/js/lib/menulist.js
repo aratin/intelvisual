@@ -10,7 +10,7 @@ function removeClass() {
 var menulink = [
 	{path: "/", button:"home", parent: "home"},
 	{path: "/home", button:"home", parent: "home"},
-    {path: "/companyprofile", button:"companyprofile", parent: "CompanyInfo"},
+    {path: "/company-profile", button:"company-profile", parent: "CompanyInfo"},
     {path: "/mangementteam", button:"mangementteam",  parent: "CompanyInfo"},
     {path: "/differentiator", button:"differentiator", parent: "CompanyInfo"},
     {path: "/career", button:"career", parent: "CompanyInfo"},
