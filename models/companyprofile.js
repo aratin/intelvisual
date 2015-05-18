@@ -13,6 +13,11 @@ Companyprofile.add({
 	longString: { type: String },
 	subString: { type: String },
 	subStringText: { type: String },
+	subShortText: { type: String },
+	subheading: { type: String },
+	subStringText1: { type: String },
+	subheadingtext: { type: String },
+	subStringText2: { type: String },
 	heading:{type:String},
 });
 
