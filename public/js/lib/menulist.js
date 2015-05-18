@@ -14,7 +14,7 @@ var menulink = [
     {path: "/mangementteam", button:"mangementteam",  parent: "CompanyInfo"},
     {path: "/differentiator", button:"differentiator", parent: "CompanyInfo"},
     {path: "/career", button:"career", parent: "CompanyInfo"},
-    {path: "/contactlist", button:"contactlist", parent: "CompanyInfo"},
+    {path: "/contactform", button:"contactform", parent: "Contact us"},
     {path: "/partner", button:"partner", parent: "CompanyInfo"},
     {path: "/softwareproduct", button:"softwareproduct", parent: "offering"},
     {path: "/consultingservice", button:"consultingservice", parent: "offering"},
