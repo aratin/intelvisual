@@ -15,6 +15,7 @@ require('./mangementteam');
 require('./differentiator');
 require('./career');
 require('./partner');
+require('./contactform');
 require('./softwareproduct');
 require('./listingmenu');
 require('./consultingservice');
