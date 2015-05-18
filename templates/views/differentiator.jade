@@ -24,21 +24,21 @@ block content
               .row
                 .col-md-4
                   if data.differentiators.length
-                      if data.differentiators[0].differentiatorImage.exists
-                        img(id="image",src=data.differentiators[0]._.differentiatorImage.limit(640,640))
+                      if data.differentiators[0].image.exists
+                        img(id="image",src=data.differentiators[0]._.image.limit(640,640))
                 .col-md-8
                   p
-                    | #{data.differentiators[0].differentiatorText}
+                    | #{data.differentiators[0].text}
                .row
                 .col-md-4
                  if data.differentiators.length
-                      if data.differentiators[0].differentiatorSubImage.exists
-                        img(id="image1",src=data.differentiators[0]._.differentiatorSubImage.limit(640,640))
+                      if data.differentiators[0].image1.exists
+                        img(id="image1",src=data.differentiators[0]._.image1.limit(640,640))
                 .col-md-8
                   h4
-                    | #{data.differentiators[0].differentiatorShortSubText}
+                    | #{data.differentiators[0].subText}
                   p
-                    | #{data.differentiators[0].differentiatorLongSubText}
+                    | #{data.differentiators[0].shortText}
 
                .row
                 .col-md-4
@@ -47,17 +47,19 @@ block content
                         img(id="image2",src=data.differentiators[0]._.differentiatorSubStringImage.limit(640,640))
                 .col-md-8
                   h4
-                    | #{data.differentiators[0].differentiatorShortStringText}
+                    | #{data.differentiators[0].shortStringText}
                   P
-                   | #{data.differentiators[0].differentiatorLongStringText}
+                   | #{data.differentiators[0].longStringText}
                .row
                 .col-md-4
                   if data.differentiators.length
                       if data.differentiators[0].differentiatorSubtextImage.exists
                         img(id="image3",src=data.differentiators[0]._.differentiatorSubtextImage.limit(640,640))
                 .col-md-8
+                  h4
+                    | #{data.differentiators[0].textLong}
                   p
-                    | #{data.differentiators[0].differentiatorTextLong}
+                    | #{data.differentiators[0].textShort}
                   div
                     .someClass                    
             include ../views/companyinfolistmenu
