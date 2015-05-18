@@ -17,6 +17,8 @@ Differentiator.add({
 	textLong: {type:String },
 	textShort: {type: Types.Textarea, initial: true },
 	image3: {type:Types.CloudinaryImage},
+	textString: {type:String },
+	textShortString: {type: Types.Textarea, initial: true },
 	heading:{type:String},
 });
 
