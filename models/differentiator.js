@@ -8,18 +8,16 @@ var Differentiator = new keystone.List('Differentiator', {
 Differentiator.add({
 	image: {type:Types.CloudinaryImage},
 	text: {type: Types.Textarea, initial: true },
-	
-	 subText: {type:String },
-	 shortText: {type: Types.Textarea, initial: true },
-	 image1: {type:Types.CloudinaryImage},
-	// shortStringText: {type:String },
-	// longStringText: {type: Types.Textarea, initial: true },
-	// differentiatorSubStringImage: {type:Types.CloudinaryImage},
-	// textLong: {type:String },
-	// differentiatorLongStringText: {type: Types.Textarea, initial: true },
-	// differentiatorSubtextImage: {type:Types.CloudinaryImage},
-	// differentiatorTextLong: {type:String },
-	// heading:{type:String},
+	subText: {type:String },
+	shortText: {type: Types.Textarea, initial: true },
+	image1: {type:Types.CloudinaryImage},
+	shortStringText: {type:String },
+	longStringText: {type: Types.Textarea, initial: true },
+	image2: {type:Types.CloudinaryImage},
+	textLong: {type:String },
+	textShort: {type: Types.Textarea, initial: true },
+	image3: {type:Types.CloudinaryImage},
+	heading:{type:String},
 });
 
 /** 
