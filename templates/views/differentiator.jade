@@ -35,7 +35,7 @@ block content
                       if data.differentiators[0].differentiatorSubImage.exists
                         img(id="image1",src=data.differentiators[0]._.differentiatorSubImage.limit(640,640))
                 .col-md-8
-                  p
+                  h4
                     | #{data.differentiators[0].differentiatorShortSubText}
                     br
                     | #{data.differentiators[0].differentiatorLongSubText}
@@ -46,7 +46,7 @@ block content
                       if data.differentiators[0].differentiatorSubStringImage.exists
                         img(id="image2",src=data.differentiators[0]._.differentiatorSubStringImage.limit(640,640))
                 .col-md-8
-                  h1
+                  h4
                     | #{data.differentiators[0].differentiatorShortStringText}
                   P
                    | #{data.differentiators[0].differentiatorLongStringText}
