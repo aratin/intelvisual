@@ -7,7 +7,9 @@ var Socialmediaanalyse = new keystone.List('Socialmediaanalyse', {
 
 Socialmediaanalyse.add({
 	image:{ type: Types.CloudinaryImage},
+	headingtext:{type:String},
 	text:{type:String},
+	headingtext1:{type:String}, 
 	subText:{type:String}, 
 	shortString:{type:String},
 	longString:{type:String},

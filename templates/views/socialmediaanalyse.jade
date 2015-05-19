@@ -28,11 +28,15 @@ block content
                       if data.socialmediaanalyses[0].image.exists
                           img(id="image",src=data.socialmediaanalyses[0]._.image.limit(640,640))
                 .col-md-8
+                    h4
+                      | #{data.socialmediaanalyses[0].headingtext}
                     p
                       | #{data.socialmediaanalyses[0].text}
+                    h4
+                      | #{data.socialmediaanalyses[0].headingtext1}
                     p
                       | #{data.socialmediaanalyses[0].subText}
-                    p
+                    h4
                       | #{data.socialmediaanalyses[0].shortString}
                     p
                       | #{data.socialmediaanalyses[0].longString}
