@@ -28,14 +28,17 @@ block content
                         img(id="image",src=data.crms[0]._.image.limit(640,640))
                 .col-md-8
                     p
+                      | #{data.crms[0].headingText}
+                    p
                       | #{data.crms[0].text}
-                      br
+                    p
+                      | #{data.crms[0].headingText1}
                     p
                       | #{data.crms[0].subText}
-                      br
                     p
                       | #{data.crms[0].subString}
-                      br
+                    p
+                      | #{data.crms[0].headingText2}
                     p
                       | #{data.crms[0].shortText}
 
