@@ -12,8 +12,9 @@ Crm.add({
 	text: { type: Types.Html },
 	headingText1:{type:String},
 	subText: { type: Types.Html },
-	shortString: { type: Types.Html },
 	headingText2:{type:String},
+	shortString: { type: Types.Html },
+	headingText3:{type:String},
 	shortText: { type: Types.Html },
 	heading:{type:String},
 });
