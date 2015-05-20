@@ -20,6 +20,7 @@ exports = module.exports = function(req, res) {
 		var q = Socialmediaanalyse.model.find();
 		q.exec(function(err, results) {
 			locals.data.socialmediaanalyses = results;
+			console.log('results',results);
 			next(err);
 		});
 	});
