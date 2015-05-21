@@ -26,7 +26,7 @@ new keystone.Email('enquiry-notification').send({
     fromName: 'Arati nankar',
     fromEmail: 'from@server.com',
     // other locals for the email template also go here
-}, callback);
+});
 /**
  * Registration
  */
