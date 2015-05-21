@@ -60,14 +60,14 @@ exports = module.exports = function(app) {
 	// app.get('/blog/:category?', routes.views.blog);
 	// app.all('/blog/post/:post', routes.views.post);
 	// app.get('/gallery', routes.views.gallery);
-	app.all('/contact', routes.views.contact);
+	//app.all('/contact', routes.views.contact);
 	app.all('/company-profile', routes.views.companyprofile);
 	app.get('/companyinfolistmenu',routes.views.companyinfolistmenu);
 	app.all('/mangementteam', routes.views.mangementteam);
 	app.all('/differentiator', routes.views.differentiator);
 	app.all('/career', routes.views.career);
 	app.all('/partner', routes.views.partner);
-	//app.all('/contactform', routes.views.contactform);
+	app.all('/contactform', routes.views.contactform);
 	app.get('/softwareproduct', routes.views.softwareproduct);
 	app.get('/listingmenu',routes.views.listingmenu);
 	app.get('/consultingservice', routes.views.consultingservice);
