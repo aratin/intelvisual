@@ -19,14 +19,18 @@ html
 		link(href="/styles/bootstrap.min.css", rel="stylesheet", type='text/css')
 		link(href="/styles/bootstrap-theme.css", rel="stylesheet")
 		link(href="/styles/vi-style.css", rel="stylesheet", type='text/css')
-    body:.wrapper
-		
+
 		if user && user.canAccessKeystone
 			link(href="/keystone/styles/content/editor.min.css", rel="stylesheet")
 		
 		block css
-			block head
-				block intro
+		block head
+	body: .wrapper
+		
+		//- header
+		header
+		  include ../views/navbar
+		  include ../views/menu
 			//- messages
 			+flash-messages(messages)
 			//- content
