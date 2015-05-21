@@ -27,7 +27,7 @@ keystone.init({
 	'auth': true,
 	'user model': 'User',
 	'cookie secret': process.env.COOKIE_SECRET || 'Visual Intelligence',
-	//'mandrill api key': process.env.MANDRILL_API_KEY || 'pyf4snChZI5bxR-6D1bg4g',
+	'mandrill api key':'pyf4snChZI5bxR-6D1bg4g',
 	
 	//'ga property': process.env.GA_PROPERTY,
 	//'ga domain': process.env.GA_DOMAIN,
@@ -67,8 +67,7 @@ keystone.set('cloudinary folders', true);
  
 // optional, will force cloudinary to serve images over https
 keystone.set('cloudinary secure', true);
-
-//keystone.set('mandrill api key', 'pyf4snChZI5bxR-6D1bg4g');
+keystone.set('mandrill api key', 'pyf4snChZI5bxR-6D1bg4g');
 //keystone.set('mandrill username', 'varsha.gawali@planetria.com');
 //keystone.set('emailtemplate', 'templates/views/contactlist.jade');
 

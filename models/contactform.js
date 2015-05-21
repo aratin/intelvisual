@@ -20,11 +20,13 @@ Contactlist.add({
 	isProtected: { type: Boolean, noedit: false },
 });
 
-// // Provide access to Keystone
-// Contactlist.schema.virtual('canAccessKeystone').get(function() {
-// 	return this.isAdmin;
-// });
-
+new keystone.Email('enquiry-notification').send({
+    subject: 'New Enquiry from Yoga Australia Website',
+    to: 'arati.nankar@planetria.com',
+    fromName: 'Arati nankar',
+    fromEmail: 'from@server.com',
+    // other locals for the email template also go here
+}, callback);
 /**
  * Registration
  */

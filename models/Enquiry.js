@@ -61,15 +61,12 @@ Enquiry.schema.methods.sendNotificationEmail = function(callback) {
 		});*/
 		
 		new keystone.Email('enquiry-notification').send({
-			to: 'arati.nankar@planetria.com',
-			from: {
-				name: 'mandrill-keystone-demo',
-				email: 'varsha.gawali@planetria.com'
-			},
-			subject: 'New Enquiry for mandrill-keystone-demo',
-			enquiry: enquiry
-		}, callback);
-		console.log('Email sent');
+    	subject: 'New Enquiry from visintel Website',
+   		 to: 'arati.nankar@planetria.com',
+   		 fromName: 'Arati Nankar',
+    	 fromEmail: 'arati.nankar@planetria.com',
+    // other locals for the email template also go here
+}, callback);
 	});
 	
 };
