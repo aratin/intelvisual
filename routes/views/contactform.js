@@ -17,8 +17,16 @@ exports = module.exports = function(req, res) {
 		locals.data = [];
 		
 	view.on('post', { action: 'contact' }, function(next) {
+		new keystone.Email('enquiry-notification').send({
+	    subject: 'Test mandrill subject',
+	    to: 'arati.nankar@planetria.com',
+	    fromName: 'Mandrill',
+	    fromEmail: 'from@server.com',
+	    // other locals for the email template also go here
+		});
+
 		var application = new Enquiry.model(),
-			updater = application.getUpdateHandler(req);
+		updater = application.getUpdateHandler(req);
 		
 		updater.process(req.body, {
 			flashErrors: true
