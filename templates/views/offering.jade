@@ -1,10 +1,6 @@
 extends ../layouts/default
 block content
-  body:.wrapper
-    header
-      include ../views/navbar
-      include ../views/menu
-     section
+    section
       #inner-banner
       #inner-content-box#content-box
         .container
@@ -32,7 +28,3 @@ block content
                               img(id="image",src=data.offerings[0]._.offeringImage.limit(640,640))
                 .col-md-8
             include ../views/listingmenu
-      .container-fluid
-        .row
-          footer
-            include ../views/footer

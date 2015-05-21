@@ -1,10 +1,6 @@
 extends ../layouts/default
 block content
-  body:.wrapper
-    header
-      include ../views/navbar
-      include ../views/menu
-     section
+    section
       #inner-banner
       #inner-content-box#content-box
         .container
@@ -36,8 +32,4 @@ block content
                   p
                     | #{data.mangementteams[0].mangementTeamlongstring}
             include ../views/companyinfolistmenu
-      .container-fluid
-        .row
-          footer
-            include ../views/footer
             

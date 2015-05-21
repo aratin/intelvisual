@@ -1,10 +1,6 @@
 extends ../layouts/default
 block content
-  body:.wrapper
-    header
-      include ../views/navbar
-      include ../views/menu
-     section
+    section
       #inner-banner
       #inner-content-box#content-box
         .container
@@ -30,8 +26,4 @@ block content
                     br
                     button(type='submit').btn.btn-primary Send
             include ../views/companyinfolistmenu
-      .container-fluid
-        .row
-          footer
-            include ../views/footer
             

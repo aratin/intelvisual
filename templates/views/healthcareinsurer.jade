@@ -1,10 +1,6 @@
 extends ../layouts/default
 block content
-  body:.wrapper
-    header
-      include ../views/navbar
-      include ../views/menu
-     section
+    section
       #inner-banner
       #inner-content-box#content-box
         .container
@@ -32,7 +28,3 @@ block content
                       br
                       | #{data.healthcareinsurers[0].longString} 
             include ../views/footermenunavigation
-      .container-fluid
-        .row
-          footer
-            include ../views/footer
