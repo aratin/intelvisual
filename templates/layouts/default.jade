@@ -19,6 +19,7 @@ html
 		link(href="/styles/bootstrap.min.css", rel="stylesheet", type='text/css')
 		link(href="/styles/bootstrap-theme.css", rel="stylesheet")
 		link(href="/styles/vi-style.css", rel="stylesheet", type='text/css')
+  body:.wrapper
 		
 		
 		if user && user.canAccessKeystone
@@ -32,14 +33,6 @@ html
 			//- content
 			block body
 				block content
-				
-		//- footer
-		//- .site-footer: .container.text-center
-		//- 	p Copyright &copy; 2013 Jed Watson. All rights reserved.
-		//- 	p: a(href="https://twitter.com/keystonejs", class="twitter-follow-button", data-show-count="false", data-size="large") Follow @keystonejs
-		//- 	script.
-		//- 		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-
 		//- scripts
 		script(src='../js/lib/html5shiv.min.js')
 		script(src='../js/lib/respond.min.js')
@@ -54,16 +47,6 @@ html
 		script(src='../js/lib/jquery.base64.js')
 		script(src='../js/lib/jquery.base64.min.js')
 		script(src='../js/lib/newsandupdate.js')
-		//-script(src='../js/lib/jspdf.plugin.total_pages.js')
-		//-script(src='../js/lib/jspdf.plugin.standard_fonts_metrics.js')
-		//-script(src='../js/lib/jspdf.plugin.split_text_to_size.js')
-		//-script(src='../js/lib/jspdf.plugin.sillysvgrenderer.js')
-		
-		//- script(src='../js/lib/jspdf.plugin.ie_below_9_shim.js')
-		//-script(src='../js/lib/jspdf.plugin.from_html.js')
-		//-script(src='../js/lib/jspdf.plugin.cell.js')
-		//-script(src='../js/lib/jspdf.plugin.autoprint.js')
-		//-script(src='../js/lib/jspdf.debug.js')
 
         
 		
