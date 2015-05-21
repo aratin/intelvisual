@@ -34,8 +34,13 @@ html
 			//- messages
 			+flash-messages(messages)
 			//- content
-			block body
-				block content
+			block content
+		//- footer
+		.container-fluid
+			.row
+				footer
+					include ../views/footer
+
 		//- scripts
 		script(src='../js/lib/html5shiv.min.js')
 		script(src='../js/lib/respond.min.js')
