@@ -3,22 +3,20 @@ extends /layouts/default
 block body-contents
 	h1 Hi *|first_name|*,
 	p.text-larger An enquiry was just submitted to #{brand}:
-	if enquiry.name.full || enquiry.email
+	if Contactlist.name || Contactlist.email
 		p.text-larger From 
-			if enquiry.name.full
-				| <strong>#{enquiry.name.full}</strong>
-			if enquiry.name.full && enquiry.email
+			if Contactlist.name
+				| <strong>#{Contactlist.name}</strong>
+			if Contactlist.name && Contactlist.email
 				|  (
-			if enquiry.email
-				| <a href="mailto:#{enquiry.email}">#{enquiry.email}</a>
-			if enquiry.name.full && enquiry.email
+			if Contactlist.email
+				| <a href="mailto:#{Contactlist.email}">#{Contactlist.email}</a>
+			if Contactlist.name && Contactlist.email
 				| )
-	if enquiry.phone
-		p.text-larger Phone: #{enquiry.phone}
-	if enquiry.enquiryType
-		p.text-larger #{enquiry._.enquiryType}
-	if enquiry.message
-		.text-larger !{enquiry.message.html}
-	p.text-muted Sent #{enquiry._.createdAt}
+	if Contactlist.phone
+		p.text-larger Phone: #{Contactlist.phone}
+	if Contactlist.messagetext
+		.text-larger !{Contactlist.messagetext.html}
+	p.text-muted Sent #{Contactlist._.createdAt}
 	p &nbsp;
-	+button({ url: '/keystone/enquiries/' + enquiry.id, label: 'Open Keystone' })
+	+button({ url: '/keystone/Contactform/' + Contactlist.id, label: 'Open Keystone' })
