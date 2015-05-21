@@ -18,7 +18,7 @@ Contactlist.add({
 	messagetext:{ type: Types.Textarea, initial: true },
 	isProtected: { type: Boolean, noedit: false },
 });
-keystone.list('Contactlist').model.find().where('isAdmin', true).exec(function(err, admins) {
+Contactlist.find().where('isAdmin', true).exec(function(err, admins) {
 	new keystone.Email('enquiry-notification').send({
 	    subject: 'New Enquiry from Yoga Australia Website',
 	    to: 'arati.nankar@planetria.com',
