@@ -9,15 +9,9 @@ var _ = require('underscore'),
 
 var Contactlist = new keystone.List('Contactlist', {
 	// use nodelete to prevent people from deleting the demo admin user
-	nodelete: true,
-	new keystone.Email('enquiry-notification').send({
-	    subject: 'New Enquiry from Yoga Australia Website',
-	    to: 'arati.nankar@planetria.com',
-	    fromName: 'Arati nankar',
-	    fromEmail: 'from@server.com',
-	    // other locals for the email template also go here
-	});
+	nodelete: true
 });
+
 Contactlist.add({
 	name: { type: Types.Name, required: true, index: true },
 	email: { type: Types.Email, initial: true, required: true, index: true },
@@ -26,7 +20,10 @@ Contactlist.add({
 	isProtected: { type: Boolean, noedit: false },
 });
 
-
+// // Provide access to Keystone
+// Contactlist.schema.virtual('canAccessKeystone').get(function() {
+// 	return this.isAdmin;
+// });
 
 /**
  * Registration
