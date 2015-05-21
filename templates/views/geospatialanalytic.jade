@@ -5,17 +5,7 @@ block content
       #inner-content-box#content-box
         .container
           #offerings
-            .col-md-9.text-right
-              ul.list-inline
-                li
-                  a(href="#",onclick="printFunction()" target="_blank")
-                    i.fa.fa-lg.fa-print
-                li
-                  a#pdf
-                    i.fa.fa-lg.fa-file-pdf-o
-                li
-                  a(href="/contactform")
-                    i.fa.fa-lg.fa-envelope
+            include ../views/icon.jade
             .col-md-9#content-data
               h2 #{data.geospatialanalytics[0].heading}
               .row
