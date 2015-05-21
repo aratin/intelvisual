@@ -1,5 +1,5 @@
 var keystone = require('keystone'),
-	Contactlist = keystone.list('Contactlist'),
+	Enquiry = keystone.list('Enquiry'),
 	Navbar = keystone.list('Navbar'),
     MenuList = keystone.list('Menu'),
 	FooterList = keystone.list('Footer'),
@@ -17,7 +17,7 @@ exports = module.exports = function(req, res) {
 		locals.data = [];
 		
 	view.on('post', { action: 'contact' }, function(next) {
-		var application = new Contactlist.model(),
+		var application = new Enquiry.model(),
 			updater = application.getUpdateHandler(req);
 		
 		updater.process(req.body, {
@@ -33,11 +33,11 @@ exports = module.exports = function(req, res) {
 		
 	});
 
-	// Load the current ContactList
+	// Load the current Enquiry
 	view.on('init', function(next) {
-		var q = Contactlist.model.find();
+		var q = Enquiry.model.find();
 		q.exec(function(err, results) {
-			locals.data.contactlists = results;
+			locals.data.enquiries = results;
 			next(err);
 		});
 	});
