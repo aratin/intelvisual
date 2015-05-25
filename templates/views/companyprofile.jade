@@ -12,7 +12,8 @@ block content
                 .col-md-4
                   if data.companyprofiles.length
                       if data.companyprofiles[0].image.exists
-                          img(id="image",src=data.companyprofiles[0]._.image.limit(640,640))
+                          img(id="image",src=data.companyprofiles[0].url)
+                          h2 Hello 
                 .col-md-8
                     p
                       | #{data.companyprofiles[0].text}
